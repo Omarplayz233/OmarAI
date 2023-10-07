@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <meta property="og:title" content="OmarAI">
+    <meta property="og:description" content="The Open Source Project Using Google's Makersuite Palm API Key.">
+    <meta property="og:url" content="https://ai.omarplayz.eu.org/">
+    <meta property="og:type" content="website">
+    <title>OmarAI</title>
+</head>
+<body>
+    <div id="chat">
+        <div id="messages" class="message-container rubik-icon">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <form>
+            <div id="inputContainer">
+                <input type="text" id="messageInput" class="large-textbox rubik-icon" placeholder="Type your message...">
+                <button type="button" id="toggle">Dark Mode</button>
+                <button type="button" id="sendMessage">
+                  <i class="material-icons">send</i>
+                </button>
+                <button type="button" id="clearMessages">Clear</button>
+            </div>
+        </form>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>

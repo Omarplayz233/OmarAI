@@ -1,0 +1,149 @@
+/* Add styles for dark mode */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Add styles for dark mode */
+body.dark-mode {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+/* Light mode styles (optional, as your initial CSS is for light mode) */
+body.light-mode {
+    background-color: #fff; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Make the chat container full-screen */
+#chat {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+/* Apply Rubik font to specific elements */
+.rubik-icon {
+    font-family: 'Rubik', sans-serif;
+    /* Adjust other styles like font-size and color as needed */
+}
+
+/* Style the message display area */
+#messages {
+    flex-grow: 1;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Container for input field and send button */
+#inputContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Add padding for spacing on mobile */
+    flex-wrap: wrap; /* Allow elements to wrap to the next line on small screens */
+}
+
+/* Style the message input field */
+#messageInput {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Style the send button */
+#sendMessage {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: auto;
+}
+
+/* Style the clear messages button */
+#clearMessages {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: auto;
+}
+
+/* Add background color for the message box in dark mode */
+.dark-mode #messages {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style for User Avatar (if needed) */
+#user-avatar {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+/* Style for OmarAI Avatar (if needed) */
+#omarai-avatar {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+/* Additional styles for the theme toggle button */
+#toggle {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Style for the theme toggle button in dark mode */
+.dark-mode #toggle {
+    background-color: #28a745; /* Change to a contrasting color in dark mode */
+}
+
+/* Responsive styles for screens with a width of 768px or less (typical mobile screens) */
+@media (max-width: 768px) {
+    /* Adjust styles for mobile devices here */
+    #inputContainer {
+        flex-direction: column; /* Stack elements vertically */
+    }
+    #sendMessage, #clearMessages {
+        width: 100%; /* Make the buttons full width on mobile */
+        margin-top: 10px; /* Add some spacing between buttons */
+    }
+    
+    /* Add this style to make the input field background white */
+    #messageInput {
+        background-color: #fff;
+    }
+}
+
+/* Increase font size for User and OmarAI text */
+#messages .user-message, #messages .omarai-message {
+    font-size: 20px; /* Adjust the font size as needed */
+}
